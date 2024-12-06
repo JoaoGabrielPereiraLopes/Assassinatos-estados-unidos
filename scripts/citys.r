@@ -15,7 +15,7 @@ for (cidade_item in cidade_colum) {
 top_5 <- sort(dict, decreasing = TRUE) # Ordena em ordem decrescente
 top_5 <- head(top_5, 5) # Pega os 5 primeiros
 
-png("../resultados/grafico_barras.png", width = 800, height = 600, bg = "white")
+png("../resultados/cidades_com_mais_assassinatos.png", width = 800, height = 600, bg = "white")
 barplot(top_5, 
         names.arg = names(top_5), 
         col = "skyblue", 
